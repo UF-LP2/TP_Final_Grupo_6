@@ -1,0 +1,161 @@
+producto,precio,ancho,largo,alto,prioridad,barrio
+licuadoras,$15223.10,64.33,79.05,74.15,express,comuna 12
+tostadoras,$59130.80,72.61,11.09,41.17,diferido,moron
+cafeteras,$46002.09,70.94,41.15,75.37,express,comuna 7
+molinillos de granos de café,$43541.10,99.03,92.3,88.22,diferido,comuna 3
+licuadoras,$21852.52,67.56,51.32,98.58,normal,comuna 10
+exprimidores,$18017.25,37.02,27.7,78.09,express,comuna 12
+molinillos de granos de café,$27265.86,26.85,85.31,95.83,diferido,comuna 10
+cafeteras,$52723.81,29.54,34.42,90.57,normal,comuna 15
+ralladores,$45305.03,96.0,17.64,38.9,normal,comuna 4
+licuadoras,$37858.64,48.01,61.04,24.64,express,avellaneda
+tostadoras,$42472.45,75.89,43.83,34.45,express,comuna 3
+cafeteras,$47197.11,87.3,68.59,75.79,express,comuna 1
+cafeteras,$18438.99,28.92,82.22,55.03,diferido,comuna 11
+ralladores,$32753.77,20.78,45.05,84.3,express,comuna 9
+molinillos de granos de café,$33626.73,28.33,60.18,12.4,express,la matanza
+exprimidores,$28851.29,13.62,69.15,15.92,diferido,comuna 5
+licuadoras,$47464.19,91.99,27.01,19.98,diferido,comuna 10
+tostadoras,$44849.31,11.19,28.45,41.45,diferido,lanus
+exprimidores,$34615.10,93.59,60.92,22.63,diferido,lomas de zamora
+ralladores,$41215.80,11.65,56.8,81.17,express,lomas de zamora
+calefones,$22230.16,71.16,49.45,27.51,express,comuna 8
+termotanques,$42781.24,31.95,94.61,179.48,normal,la matanza
+calefones,$57465.32,87.62,91.25,89.71,express,lanus
+secarropas,$40613.05,69.24,63.69,189.38,express,comuna 12
+calefones,$23988.69,47.27,14.53,119.17,express,lomas de zamora
+lavarropas,$17272.02,80.91,44.37,150.41,express,tres de febrero
+secarropas,$31639.90,26.92,64.79,92.18,diferido,comuna 5
+calefones,$49594.65,35.71,82.29,37.55,express,lomas de zamora
+secarropas,$45039.93,63.77,58.07,68.36,express,tres de febrero
+termotanques,$22839.51,65.93,69.73,11.51,express,comuna 6
+freezers,$20731.00,81.77,39.64,116.73,express,comuna 13
+cocinas,$44511.22,65.64,37.41,46.2,diferido,comuna 10
+cocinas,$43350.08,62.92,34.12,130.85,diferido,comuna 11
+secarropas,$54316.51,69.85,14.68,74.17,diferido,comuna 14
+termotanques,$42202.19,64.3,22.61,28.54,normal,comuna 1
+termotanques,$37344.75,38.18,98.01,90.97,express,comuna 10
+freezers,$37884.44,95.17,72.36,151.41,express,san isidro
+heladeras,$40799.59,43.85,22.74,160.67,express,san martin
+termotanques,$35180.98,10.74,23.56,12.41,normal,avellaneda
+secarropas,$32279.94,84.1,97.65,57.06,express,comuna 5
+heladeras,$31568.23,90.47,84.35,139.7,express,avellaneda
+termotanques,$44109.34,32.89,52.47,50.5,diferido,comuna 14
+calefones,$18300.56,86.87,74.59,99.22,express,comuna 15
+calefones,$16327.15,79.31,72.99,87.99,express,comuna 4
+termotanques,$41552.40,51.22,19.16,112.84,normal,comuna 3
+termotanques,$54521.91,89.92,32.17,106.11,express,comuna 9
+microondas,$58699.77,36.23,74.68,13.12,normal,lanus
+freezers,$34416.03,74.34,79.43,171.8,diferido,san martin
+heladeras,$34890.10,39.94,92.79,37.24,diferido,comuna 1
+heladeras,$19541.17,28.33,56.82,165.4,diferido,comuna 14
+impresoras,$57644.43,14.46,99.03,47.06,diferido,vicente lopez
+disco solido,$17354.11,80.75,25.51,126.65,normal,comuna 10
+webcam,$39249.49,25.51,10.06,98.42,normal,comuna 7
+webcam,$25959.79,39.19,10.9,88.89,normal,vicente lopez
+mouse,$30789.19,46.46,13.61,39.36,normal,comuna 8
+disco duro,$36614.98,51.3,47.33,74.63,diferido,moron
+disco solido,$59593.30,41.8,33.98,145.56,diferido,comuna 9
+impresoras,$22662.73,47.31,72.72,162.56,diferido,comuna 6
+teclado,$42994.76,86.75,49.65,129.27,normal,comuna 11
+disco solido,$20533.49,52.66,64.93,102.49,normal,san isidro
+mouse,$51943.96,37.35,25.9,99.15,normal,lomas de zamora
+disco duro,$31105.32,49.54,17.55,106.47,diferido,comuna 3
+computadoras personales,$25962.02,61.37,38.28,28.43,diferido,lanus
+computadoras personales,$57876.90,28.74,17.49,73.24,diferido,lanus
+parlante,$21238.53,69.88,89.99,131.89,express,comuna 1
+webcam,$45209.85,71.34,70.28,118.48,express,comuna 4
+mouse,$56249.61,36.33,33.97,137.54,normal,comuna 14
+computadoras personales,$24312.46,19.74,23.97,13.7,normal,comuna 3
+mouse,$41727.42,10.73,90.1,93.02,normal,comuna 11
+disco solido,$51610.36,41.51,10.95,63.54,normal,avellaneda
+computadoras personales,$15387.03,68.73,54.89,34.76,normal,comuna 3
+mouse,$57103.96,44.37,25.76,36.43,express,vicente lopez
+computadoras personales,$48766.98,82.38,26.44,10.97,normal,comuna 3
+webcam,$31237.54,71.04,66.28,47.93,express,comuna 15
+disco solido,$54023.97,68.22,47.45,69.48,express,comuna 13
+impresoras,$25046.97,21.05,35.39,44.54,normal,comuna 9
+disco duro,$47604.17,27.59,13.98,152.35,normal,comuna 10
+monitor,$36310.15,79.52,98.0,148.58,express,comuna 7
+disco duro,$57984.69,19.49,59.89,41.55,normal,comuna 2
+impresoras,$44229.55,98.23,77.33,65.84,diferido,avellaneda
+teclado,$35245.19,76.72,27.77,60.5,express,comuna 12
+teclado,$18670.07,10.99,28.57,163.86,normal,san isidro
+monitor,$18349.89,71.48,99.74,58.58,diferido,san isidro
+webcam,$45399.15,34.89,54.93,78.19,express,comuna 1
+teclado,$34657.74,92.31,79.94,52.1,diferido,comuna 4
+monitor,$50682.44,23.93,18.43,184.77,normal,comuna 1
+impresoras,$38781.52,51.85,33.4,199.64,diferido,comuna 7
+teclado,$50531.58,85.34,16.8,11.77,normal,vicente lopez
+mouse,$45766.93,20.74,87.26,142.58,diferido,comuna 7
+teclado,$32132.39,12.99,26.78,193.64,diferido,comuna 9
+teclado,$41037.03,94.66,29.53,17.7,normal,comuna 11
+parlante,$27227.76,31.36,37.19,175.97,express,comuna 8
+parlante,$15199.88,20.91,73.85,184.2,diferido,comuna 12
+impresoras,$54757.00,89.61,52.36,38.89,express,lanus
+parlante,$59113.88,12.4,42.12,28.83,diferido,comuna 10
+mouse,$23332.94,44.9,67.35,76.67,normal,avellaneda
+computadoras personales,$20908.25,51.72,79.8,81.3,diferido,comuna 15
+teclado,$28035.20,38.09,12.98,43.44,diferido,comuna 2
+computadoras personales,$54717.03,11.42,56.5,51.66,normal,moron
+teclado,$43398.46,16.48,71.77,196.89,express,comuna 9
+monitor,$33346.58,73.36,36.55,136.46,express,vicente lopez
+computadoras personales,$39573.81,28.54,70.39,10.07,diferido,comuna 9
+webcam,$15017.83,77.53,92.4,165.58,express,comuna 8
+webcam,$26657.65,44.97,87.31,40.5,normal,san martin
+disco solido,$36948.84,67.2,75.02,64.49,diferido,moron
+disco duro,$55335.92,36.17,50.28,11.06,diferido,avellaneda
+disco solido,$20608.29,30.49,72.22,59.13,normal,comuna 12
+impresoras,$50570.03,76.57,68.94,79.18,express,comuna 15
+disco duro,$44677.04,14.25,45.69,86.56,express,comuna 13
+mouse,$35155.38,99.72,45.58,188.68,normal,san martin
+televisor 90,$100152.19,84.93,32.79,187.71,express,comuna 11
+televisor 82,$87709.43,34.56,98.13,145.66,normal,vicente lopez
+televisor 55,$26167.25,13.5,70.23,173.72,express,comuna 2
+televisor 62,$79705.83,76.16,85.26,103.98,normal,san isidro
+televisor 68,$93479.74,70.37,66.64,24.49,diferido,comuna 3
+televisor 75,$81561.72,12.85,71.53,30.55,diferido,comuna 6
+televisor 68,$63064.18,77.15,22.04,196.2,express,la matanza
+televisor 75,$38150.19,64.18,43.55,135.88,normal,san isidro
+televisor 68,$27702.20,37.91,48.74,187.66,normal,comuna 10
+televisor 68,$80830.48,16.87,33.08,164.24,diferido,san isidro
+televisor 90,$23682.53,31.15,62.37,156.2,express,comuna 3
+televisor 90,$87366.33,19.64,32.74,186.61,express,comuna 4
+televisor 75,$31433.92,65.62,60.66,93.2,express,comuna 14
+televisor 68,$103417.21,23.55,27.46,84.75,express,vicente lopez
+televisor 55,$95857.33,71.06,61.57,119.06,normal,comuna 15
+televisor 62,$96808.14,31.3,87.33,61.23,diferido,tres de febrero
+televisor 68,$73231.55,69.13,13.99,72.44,normal,comuna 14
+televisor 82,$90180.73,36.17,70.92,199.68,normal,lanus
+televisor 75,$89746.91,73.85,57.0,10.44,diferido,comuna 9
+televisor 82,$38214.21,96.31,70.95,49.4,normal,comuna 9
+televisor 75,$46780.86,14.47,75.6,173.1,express,comuna 5
+televisor 62,$50854.50,22.91,82.99,26.56,diferido,comuna 13
+televisor 62,$117406.25,32.29,32.85,189.56,diferido,comuna 10
+televisor 75,$29279.10,95.11,75.75,198.7,diferido,comuna 13
+televisor 82,$55432.77,27.87,10.27,57.28,express,comuna 3
+televisor 68,$39757.75,49.62,77.48,151.21,diferido,moron
+televisor 90,$116598.01,75.75,74.94,59.43,normal,avellaneda
+televisor 68,$18908.45,97.31,39.0,108.65,diferido,vicente lopez
+televisor 90,$67419.16,97.27,79.52,175.67,normal,comuna 2
+televisor 52,$105151.41,71.63,64.28,35.88,express,lanus
+televisor 68,$51125.25,64.93,53.19,27.64,diferido,comuna 4
+televisor 75,$67938.36,89.78,68.95,80.34,normal,comuna 6
+televisor 55,$113253.40,47.74,84.9,51.6,express,tres de febrero
+televisor 55,$108009.60,22.19,69.62,38.14,express,comuna 13
+televisor 52,$89470.28,52.11,48.71,119.21,normal,comuna 8
+televisor 82,$87914.98,83.86,52.19,101.83,normal,comuna 3
+televisor 62,$28039.80,87.42,26.48,151.49,normal,moron
+televisor 75,$73437.18,84.24,51.38,42.44,normal,comuna 10
+televisor 68,$81632.37,64.55,81.67,107.35,diferido,comuna 13
+televisor 82,$43386.15,50.35,74.18,35.98,diferido,comuna 4
+televisor 90,$74701.73,84.4,20.04,67.83,normal,comuna 8
+televisor 75,$117891.67,65.27,44.2,137.37,express,la matanza
+televisor 90,$68531.86,24.61,60.71,126.72,diferido,comuna 15
+televisor 62,$100772.37,73.45,30.77,79.71,normal,comuna 7
+televisor 62,$79845.43,84.5,44.06,153.83,normal,la matanza
+televisor 68,$25680.19,26.99,78.16,133.3,express,moron
+televisor 90,$82916.79,64.26,82.15,89.06,normal,moron
+televisor 68,$94232.15,35.0,17.42,150.0,diferido,comuna 2
+televisor 52,$56517.98,90.7,79.78,152.99,diferido,lomas de zamora
+televisor 52,$28705.62,33.73,50.59,134.41,express,comuna 12
