@@ -8,4 +8,6 @@
 
 ### - Paso 4:<br>Crear Repositorio<br><img src = "https://i.imgur.com/1QOtTDH.png" >
 
-### - Paso 5:<br>Empezar a trabajar<br><img src = "https://media4.giphy.com/media/iIqmM5tTjmpOB9mpbn/giphy.gif" >
+### - Paso 5:<br>Añadir Team al Repo<br><i>⚠️Elegir Mantain o Admin</i><br><img src = "https://i.imgur.com/1NOFVDZ.gif" >
+
+### - Paso 6:<br>Empezar a trabajar<br><img src = "https://media4.giphy.com/media/iIqmM5tTjmpOB9mpbn/giphy.gif" >
