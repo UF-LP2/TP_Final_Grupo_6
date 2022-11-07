@@ -6,17 +6,17 @@ using tp_final.Properties;
 
 namespace csvfiles {
     public class _csv {
-        public void read_csv() {
+        public List<Pedido> read_csv() {
             using (var reader = new StreamReader(Resources.archivo))
             using (var csv = new CsvReader(reader, CultureInfo.InvariantCulture)) {
 
-                var records = new List<Pedido>();
+                List<Pedido> records = new List<Pedido>();
 
                 csv.Read();
                 csv.ReadHeader();
                 while(csv.Read()) {
 
-                    var record = new Pedido {
+                    Pedido record = new Pedido {
                         producto = csv.GetField<string>("producto"),
                         precio = csv.GetField<float>("precio"),
                         ancho = csv.GetField<float>("ancho"),
@@ -29,8 +29,7 @@ namespace csvfiles {
                     records.Add(record);
                 }
 
-                // var records = csv.GetRecords<Pedido>();
-                // Console.Write(records);
+                return records;
             }
         }
     }
