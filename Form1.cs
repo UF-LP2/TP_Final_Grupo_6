@@ -7,6 +7,6 @@ public partial class Form1 : Form
     {
         InitializeComponent();
         var csv_ = new csvfiles._csv();
-        csv_.read_csv();
+        List<Pedido> Pedidos = csv_.read_csv();
     }
 }
