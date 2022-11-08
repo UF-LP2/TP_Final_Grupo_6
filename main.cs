@@ -9,7 +9,7 @@ namespace tp_final
     internal class main
     {
         //creamos cocimundo
-        Cocimundo cocimundo=new Cocimundo;
+        Cocimundo cocimundo= new Cocimundo();
         
     }
 }
