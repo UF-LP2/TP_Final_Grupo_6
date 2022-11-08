@@ -46,7 +46,17 @@ public class Cocimundo
     public List<Pedidos> ListaDeRecorrido1 = new List<Pedidos>();
     public List<Pedidos> ListaDeRecorrido2 = new List<Pedidos>();
     public List<Pedidos> ListaDeRecorrido3 = new List<Pedidos>();
-    
+    public Cocimundo(string nombre, Pedidos deposito, List<Vehiculos> listaVehiculos, List<Pedidos> listaPedidos, List<Pedidos> listaDeRecorrido1, List<Pedidos> listaDeRecorrido2, List<Pedidos> listaDeRecorrido3)
+    {
+        this.nombre = nombre;
+        this.deposito = deposito;
+        ListaVehiculos = listaVehiculos;
+        ListaPedidos = listaPedidos;
+        ListaDeRecorrido1 = null;
+        ListaDeRecorrido2 = null;
+        ListaDeRecorrido3 = null;
+    }
+    ~Cocimundo() { }
 }
 public class Pedidos
 {
@@ -57,7 +67,16 @@ public class Pedidos
     // va a tener una funcion que devuelve el peso total de todos los articulos de ese pedido--> PesoTotal();
     public bool enviado; // se setea en true si fue enviado, sino se pone en false
     public int CostoEnvio; //se setea dependiendo de que vehiculo lo lleve
-
+    public Pedidos(int iD, TipoPedido pedido, Clientes cliente, List<Articulos> listaDeArticulos, bool enviado, int costoEnvio)
+    {
+        ID = iD;
+        Pedido = pedido;
+        this.cliente = cliente;
+        ListaDeArticulos = listaDeArticulos;
+        this.enviado = false;
+        CostoEnvio = costoEnvio;
+    }
+    ~Pedidos() { }
 }
 public class Vehiculos
 {
@@ -69,6 +88,18 @@ public class Vehiculos
     public float danio = 0; // se incrementa con los viajes
     public float kmPorViaje; //se los pasamos de func distancia
     public int cantViajes; // cantidad de viajes que se hicieron, ya que si es una camioneta puede hacer hasta 4 viajes por día
+    public Vehiculos(TipoVehiculo vehiculo, float pesoMaxDeCarga, float volumenDeCarga, float consumoNafta, float tanqueNafta, float danio, float kmPorViaje, int cantViajes)
+    {
+        Vehiculo = vehiculo;
+        this.pesoMaxDeCarga = pesoMaxDeCarga;
+        this.volumenDeCarga = volumenDeCarga;
+        this.consumoNafta = consumoNafta;
+        this.tanqueNafta = tanqueNafta;
+        this.danio = danio;
+        this.kmPorViaje = kmPorViaje;
+        this.cantViajes = cantViajes;
+    }
+    ~Vehiculos() { }
 }
 
 public class Articulos
@@ -79,9 +110,16 @@ public class Articulos
     public float largo; //Volumen es un enum donde definimos los volumenes d cada articulo
     public float ancho;
     public float alto;
-   
-  
-    // vamos a tener una funcion que calcula el volumen total
+    public Articulos(TipoLineaPedido categoriaPedido, TipoArticulo tipoDeArticulo, float peso, float largo, float ancho, float alto)
+    {
+        CategoriaPedido = categoriaPedido;
+        TipoDeArticulo = tipoDeArticulo;
+        Peso = peso;
+        this.largo = largo;
+        this.ancho = ancho;
+        this.alto = alto;
+    }
+    ~Articulos() { }
 }
 public class Clientes
 {
@@ -91,4 +129,14 @@ public class Clientes
     public string Direccion;
     public float distancia_a_Liniers;
     private Barrio Barrio;
+    public Clientes(string nombre, string apellido, string dNI, string direccion, float distancia_a_Liniers, Barrio barrio)
+    {
+        this.nombre = nombre;
+        this.apellido = apellido;
+        DNI = dNI;
+        Direccion = direccion;
+        this.distancia_a_Liniers = distancia_a_Liniers;
+        Barrio = barrio;
+    }
+    ~Clientes() { }
 }
