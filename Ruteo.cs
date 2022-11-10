@@ -9,7 +9,6 @@ namespace tp_final
 {
     internal class Ruteo
     {
-
         public void AsignarRecorrido(Cocimundo cocimundo)
         {
             int j = 0;
@@ -40,7 +39,8 @@ namespace tp_final
             int ContadorNafta = 0;
             Pedidos auxiliar; // una variable auxiliar del tipo pedido
             List<Pedidos> ListaAux = new List<Pedidos>();
-            ListaAux[0] = cocimundo.deposito //Deposito seria la direccion del donde está el deposito el primero en la lista del ruteo será Liniers que es de donde partimos, no sumamos distancia
+            ListaAux[1] = null;
+            ListaAux[0] = cocimundo.deposito; //Deposito seria la direccion del donde está el deposito el primero en la lista del ruteo será Liniers que es de donde partimos, no sumamos distancia
             ListaAux[1] = Distancias(ListaAux[0], ListaDePedidos, vehiculo);//la ciudad que este mas cerca al deposito la visito primero 
             vehiculo.kmPorViaje = ListaAux[1].cliente.distancia_a_Liniers; // agregamos los km que hay a la ciudad más cercana
             for (int i = 2; i < ListaAux.Count; i++)
@@ -67,7 +67,7 @@ namespace tp_final
                     }
                 }
             }
-             // es la lista final del ruteo, la cual  esta ordenada de forma tal de ahorrar en el consumo de nafta
+            // es la lista final del ruteo, la cual  esta ordenada de forma tal de ahorrar en el consumo de nafta
             return ListaAux;
         }
         public Pedidos Distancias(Pedidos Pedido, List<Pedidos> ListaPedidos, Vehiculos vehiculo)
@@ -137,7 +137,7 @@ namespace tp_final
             }
         }
         //ListaPedidosRecorrido es una lista de elementos del tipo pedido, cocimundo es un elemento del tipo Cocimundo
-        int LineaBlanca(List<Pedidos> ListaPedidos) // retorna la cantidad de pedidos que son de linea blanca en un recorrido
+        public int LineaBlanca(List<Pedidos> ListaPedidos) // retorna la cantidad de pedidos que son de linea blanca en un recorrido
         {
             int contador = 0;
             for (int i = 0; i < ListaPedidos.Count; i++)
@@ -152,7 +152,7 @@ namespace tp_final
             }
             return contador;
         }
-        void AsignarVehiculoARecorrido(int cont1, int cont2, int cont3, Cocimundo cocimundo) // funcion que compara los contadores de linea blanca
+       public void AsignarVehiculoARecorrido(int cont1, int cont2, int cont3, Cocimundo cocimundo) // funcion que compara los contadores de linea blanca
         {
             if (cont1 > cont3 && cont1 > cont2)
             {
@@ -200,7 +200,7 @@ namespace tp_final
             }
 
         }
-        void AsignarCostoEnvio(List<Pedidos> ListaPedidos, Vehiculos vehiculo)
+        public void AsignarCostoEnvio(List<Pedidos> ListaPedidos, Vehiculos vehiculo)
         {
             if (vehiculo.Vehiculo == TipoVehiculo.camioneta)
             {
@@ -226,10 +226,131 @@ namespace tp_final
                 }
             }
         }
+        public int DistanciaALiniers(Distancia barrios)
+        {
+            int d = 0;
+            switch(barrios)
+            {
+                case Distancia.Chacarita:
+                    d = 23;break;
+                case Distancia.LaBoca:
+                    d = 25;break;
+                case Distancia.PuertoMadero:
+                    d = 18; break;
+                case Distancia.Flores:
+                    d = 17; break;
+                case Distancia.Caballito:
+                    d = 15; break;
+                case Distancia.Retiro:
+                    d = 27; break;
+                case Distancia.Palermo:
+                    d = 14; break;
+                case Distancia.Belgrano:
+                    d = 20; break;
+                case Distancia.VillaUrquiza:
+                    d = 13; break;
+                case Distancia.VillaDevoto:
+                    d = 12; break;
+                case Distancia.VillaLugano:
+                    d = 10; break;
+                case Distancia.ParqueAvellaneda:
+                    d = 9; break;
+                case Distancia.VelezSarfield:
+                    d = 8; break;
+                case Distancia.MonteCastro:
+                    d = 7; break;
+                case Distancia.Mataderos:
+                    d = 4; break;
+                case Distancia.VillaLuro:
+                    d = 2; break;
+                case Distancia.Versalles:
+                    d = 3; break;
+                case Distancia.Avellaneda:
+                    d = 21; break;
+                case Distancia.Lanus:
+                    d = 19; break;
+                case Distancia.LomasDeZamora:
+                    d = 18; break;
+                case Distancia.LaMatanza:
+                    d = 5; break;
+                case Distancia.VicenteLopez:
+                    d = 17; break;
+                case Distancia.SanMartin:
+                    d = 11; break;
+                case Distancia.TresDeFebrero:
+                    d = 6; break;
+                case Distancia.Liniers:
+                    d = 0; break;
+                case Distancia.Floresta:
+                    d = 5; break;
+                case Distancia.VillaReal:
+                    d = 5; break;
+                case Distancia.VillaDelParque:
+                    d = 9; break;
+                case Distancia.VillaSantaRita:
+                    d =7; break;
+                case Distancia.VillaGralMitre:
+                    d = 8; break;
+                case Distancia.LaPaternal:
+                    d = 13; break;
+                case Distancia.VillaCrespo:
+                    d = 12; break;
+                case Distancia.Agronomia:
+                    d = 10; break;
+                case Distancia.ParqueChas:
+                    d = 12; break;
+                case Distancia.VillaUrtuzar:
+                    d = 18; break;
+                case Distancia.VillaPueyrredon:
+                    d = 10; break;
+                case Distancia.Coghlan:
+                    d = 16; break;
+                case Distancia.Saavedra:
+                    d = 14; break;
+                case Distancia.Nuñez:
+                    d = 18; break;
+                case Distancia.Colegiales:
+                    d = 19; break;
+                case Distancia.Recoleta:
+                    d = 27; break;
+                case Distancia.Almagro:
+                    d = 15; break;
+                case Distancia.ParqueChacabuco:
+                    d = 12; break;
+                case Distancia.VillaRiachuelo:
+                    d = 10; break;
+                case Distancia.VillaSoldati:
+                    d = 10; break;
+                case Distancia.NuevaPompeya:
+                    d = 11; break;
+                case Distancia.Boedo:
+                    d = 13; break;
+                case Distancia.Barracas:
+                    d = 19; break;
+                case Distancia.ParquePatricios:
+                    d = 17; break;
+                case Distancia.Constitucion:
+                    d = 17; break;
+                case Distancia.SanTelmo:
+                    d = 17; break;
+                case Distancia.SanNicolas:
+                    d = 19; break;
+                case Distancia.Montserrat:
+                    d = 17; break;
+                case Distancia.Balvanera:
+                    d = 17; break;
+                case Distancia.SanCristobal:
+                    d = 14; break;
+                case Distancia.SanIsidro:
+                    d = 27; break;
+                case Distancia.Ituzaingo:
+                    d = 19; break;
+                case Distancia.Hurlingham:
+                    d = 14; break;
+                case Distancia.Moron:
+                    d = 14; break;
+            }
+            return d;
+        }
     }
-
-
-
-
-
 }
