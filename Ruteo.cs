@@ -114,7 +114,7 @@ namespace tp_final
                 ContadorNafta++;
                 vehiculo.kmPorViaje -= (float)distancia_del_mas_cercano; // retrocedo al momento previo de añadir ese pedido a mi recorrido
                 ProxPedido = Pedido; // devuelvo el anterior a él
-                return; //TODO ver como lo devolvemos
+                return ProxPedido;
             }
             else
             {

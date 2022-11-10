@@ -16,7 +16,7 @@ namespace tp_final
                 vol = Pedido.ListaDeArticulos[j].ancho * Pedido.ListaDeArticulos[j].largo * Pedido.ListaDeArticulos[j].alto;
             }
 
-            return vol;
+            return vol; //retorno el volumen de este pedido
         }
         public float PesoPedidos(Pedidos Pedido)
         {
@@ -27,12 +27,26 @@ namespace tp_final
                     peso += Pedido.ListaDeArticulos[j].Peso;
                 }
          
-            return peso;
+            return peso; //retorno el peso de este pedido
         }
         public void ElementosACargar(List<Pedidos> ListaPedidos, Vehiculos vehiculo, List<Pedidos> ListaSobrantes,List<Pedidos> PedidosACargar)
         {
             int i = 0;
             float j = vehiculo.volumenDeCarga;
+            Pedidos[,] matriz = new Pedidos[(int)vehiculo.volumenDeCarga, ListaPedidos.Count];
+            for(i=0;i<ListaPedidos.Count-1;i++)
+            {
+                int k;
+                for (k=i;k<ListaPedidos.Count-1;k++)
+                {
+                    if (VolumenPedidos(ListaPedidos[i]) / PesoPedidos(ListaPedidos[i]) >VolumenPedidos(ListaPedidos[k + 1]) / PesoPedidos(ListaPedidos[k + 1])
+                    {
+                        Pedidos Aux = ListaPedidos[i];
+                    }
+                }
+        
+            }
+            //TODO cambiar este codigo
             while(j<=0)//mientras que el volumen del pedido entre en el vehiculo, lo cargo, sino lo paso a la lista de pedidos que se entregaran en la prox salida
             {
                 if (VolumenPedidos(ListaPedidos[i]) < j)

@@ -67,7 +67,8 @@ public class Pedidos
     // va a tener una funcion que devuelve el peso total de todos los articulos de ese pedido--> PesoTotal();
     public bool enviado; // se setea en true si fue enviado, sino se pone en false
     public int CostoEnvio; //se setea dependiendo de que vehiculo lo lleve
-    public Pedidos(int iD, TipoPedido pedido, Clientes cliente, List<Articulos> listaDeArticulos, bool enviado, int costoEnvio)
+    public float beneficio;// volumen/peso
+    public Pedidos(int iD, TipoPedido pedido, Clientes cliente, List<Articulos> listaDeArticulos, bool enviado, int costoEnvio, float beneficio)
     {
         ID = iD;
         Pedido = pedido;
@@ -75,6 +76,7 @@ public class Pedidos
         ListaDeArticulos = listaDeArticulos;
         this.enviado = false;
         CostoEnvio = costoEnvio;
+        this.beneficio = 0; 
     }
     ~Pedidos() { }
 }
