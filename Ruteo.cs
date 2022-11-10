@@ -39,10 +39,8 @@ namespace tp_final
         {
             int ContadorNafta = 0;
             Pedidos auxiliar; // una variable auxiliar del tipo pedido
-            List<Pedidos> ListaAux = new()
-            {
-                [0] = cocimundo.deposito //Deposito seria la direccion del donde está el deposito el primero en la lista del ruteo será Liniers que es de donde partimos, no sumamos distancia ya que es km =0
-            };
+            List<Pedidos> ListaAux = new List<Pedidos>();
+            ListaAux[0] = cocimundo.deposito //Deposito seria la direccion del donde está el deposito el primero en la lista del ruteo será Liniers que es de donde partimos, no sumamos distancia
             ListaAux[1] = Distancias(ListaAux[0], ListaDePedidos, vehiculo);//la ciudad que este mas cerca al deposito la visito primero 
             vehiculo.kmPorViaje = ListaAux[1].cliente.distancia_a_Liniers; // agregamos los km que hay a la ciudad más cercana
             for (int i = 2; i < ListaAux.Count; i++)
@@ -55,7 +53,7 @@ namespace tp_final
                 }
                 else
                 {
-                    ListaAux.Add(auxiliar); // lo guardo en mi lista de pedidos, ya que la nafta me alcanza <3
+                    ListaAux.Add(auxiliar); // lo guardo en mi lista de pedidos, ya que la nafta me alcanza 
                 }
             }
             if (ContadorNafta == 1)//significa que no me alcanzo la nafta por ende me guardo los pedidos que siguen en la lista en una auxiliar, para hacerlos en otra instancia
@@ -139,7 +137,7 @@ namespace tp_final
             }
         }
         //ListaPedidosRecorrido es una lista de elementos del tipo pedido, cocimundo es un elemento del tipo Cocimundo
-        int LineaBlanca(List<Pedidos> ListaPedidos, Cocimundo cocimundo) // retorna la cantidad de pedidos que son de linea blanca en un recorrido
+        int LineaBlanca(List<Pedidos> ListaPedidos) // retorna la cantidad de pedidos que son de linea blanca en un recorrido
         {
             int contador = 0;
             for (int i = 0; i < ListaPedidos.Count; i++)
