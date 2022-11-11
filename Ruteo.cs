@@ -34,6 +34,13 @@ namespace tp_final
             }
 
         }
+        public void AsignarDistanciaLiniers(List<Pedidos>ListaPedidos)
+        {
+            for(int i=0;i<ListaPedidos.Count;i++)
+            {
+                ListaPedidos[i].cliente.distancia_a_Liniers = DistanciaALiniers(ListaPedidos[i].cliente.Barrioaux);
+            }
+        }
         public List<Pedidos> Ruteo_Por_Recorrido(Cocimundo cocimundo, List<Pedidos> ListaDePedidos, Vehiculos vehiculo, List<Pedidos> ListaSobrantes)
         {
             int ContadorNafta = 0;

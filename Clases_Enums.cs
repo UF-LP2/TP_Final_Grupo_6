@@ -141,8 +141,9 @@ namespace tp_final
         public string DNI;
         public string Direccion;
         public float distancia_a_Liniers;
-        private Barrio Barrio;
-        public Clientes(string nombre, string apellido, string dNI, string direccion, float distancia_a_Liniers, Barrio barrio)
+        public Barrio Barrio;
+        public Distancia Barrioaux;
+        public Clientes(string nombre, string apellido, string dNI, string direccion, float distancia_a_Liniers, Barrio barrio,Distancia barrioaux)
         {
             this.nombre = nombre;
             this.apellido = apellido;
@@ -150,6 +151,7 @@ namespace tp_final
             Direccion = direccion;
             this.distancia_a_Liniers = distancia_a_Liniers;
             Barrio = barrio;
+            Barrioaux = barrioaux;
         }
         ~Clientes() { }
     }
